@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5"
+  },
+  "exclude": [
+    "node_modules",
+    "typings/browser",
+    "typings/browser.d.ts"
+  ],
+  "files": [
+    "typings/main.d.ts"
+  ]
+}
