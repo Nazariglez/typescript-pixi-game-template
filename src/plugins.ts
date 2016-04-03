@@ -1,9 +1,9 @@
 ///<reference path="../typings/main.d.ts" />
-///<reference path="../pixi-animationloop.d.ts" />
-///<reference path="../pixi-scene.d.ts" />
-///<reference path="../pixi-timer.d.ts" />
-///<reference path="../pixi-tween.d.ts" />
-///<reference path="../pixi-keyboard.d.ts" />
+///<reference path="../typings/pixi-animationloop.d.ts" />
+///<reference path="../typings/pixi-scene.d.ts" />
+///<reference path="../typings/pixi-timer.d.ts" />
+///<reference path="../typings/pixi-tween.d.ts" />
+///<reference path="../typings/pixi-keyboard.d.ts" />
 /*
   import all the plugins to extend pixi here.
 */
