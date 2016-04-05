@@ -1,6 +1,6 @@
 let hd = window.devicePixelRatio === 2 ? "@2x" : "";
 
-export default class LoaderScene extends PIXI.Scene{
+export default class LoaderScene extends PIXI.scene.Scene{
   name = "loaderScene";
   barWidth = 300;
   barHeight = 16;

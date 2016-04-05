@@ -1,8 +1,8 @@
 ///<reference path="../typings/main.d.ts" />
 ///<reference path="../typings/pixi-animationloop.d.ts" />
-///<reference path="../typings/pixi-scene.d.ts" />
 ///<reference path="../typings/pixi-timer.d.ts" />
 ///<reference path="../typings/pixi-tween.d.ts" />
+///<reference path="../typings/pixi-scene.d.ts" />
 ///<reference path="../typings/pixi-keyboard.d.ts" />
 ///<reference path="../typings/pixi-audio.d.ts" />
 /*

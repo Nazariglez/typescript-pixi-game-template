@@ -1,12 +1,13 @@
-export default class GameScene extends PIXI.Scene{
+export default class GameScene extends PIXI.scene.Scene{
   background:PIXI.Graphics;
   name:string = "gameScene";
 
   constructor(){
     super();
+    this.on('init', this._init);
   }
 
-  init():void{
+  private _init():void{
     let ww = this.manager.fixedWidth/2;
     let hh = this.manager.fixedHeight/2;
 

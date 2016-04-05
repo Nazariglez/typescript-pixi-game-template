@@ -10,7 +10,7 @@ export default class Game {
     this.renderer = new Renderer(config.width || 800, config.height || 600, config.rendererOptions);
     document.body.appendChild(this.renderer.view);
 
-    this.animationLoop = new PIXI.AnimationLoop(this.renderer, new PIXI.SceneManager(this.renderer));
+    this.animationLoop = new PIXI.AnimationLoop(this.renderer, new PIXI.scene.SceneManager(this.renderer));
     this.animationLoop.stopOnVisibilityChange = true;
     this.animationLoop.on('prerender', this.update.bind(this));
     this.animationLoop.on('postrender', this._updateManagers.bind(this));
@@ -49,11 +49,11 @@ export default class Game {
     this.animationLoop.stop();
   }
 
-  get stage():PIXI.SceneManager{
-    return <PIXI.SceneManager>this.animationLoop.stage;
+  get stage():PIXI.scene.SceneManager{
+    return <PIXI.scene.SceneManager>this.animationLoop.stage;
   }
 
-  set stage(stage:PIXI.SceneManager){
+  set stage(stage:PIXI.scene.SceneManager){
     this.animationLoop.stage = stage;
   }
 }

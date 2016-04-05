@@ -17,7 +17,7 @@
     "json-loader": "^0.5.4",
     "pixi-animationloop": "^1.0.7",
     "pixi-audio": "^0.1.0",
-    "pixi-scene": "^0.9.2",
+    "pixi-scene": "^0.9.3",
     "pixi-timer": "^1.0.1",
     "pixi-tween": "^0.1.2",
     "pixi.js": "^3.0.10",
