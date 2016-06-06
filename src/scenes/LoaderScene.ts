@@ -1,10 +1,11 @@
+import config from '../config';
 let hd = window.devicePixelRatio === 2 ? "@2x" : "";
 
 export default class LoaderScene extends PIXI.scene.Scene{
   name = "loaderScene";
   barWidth = 300;
   barHeight = 16;
-  vel = 20; //Progress added per second
+  vel = 100; //Progress added per second
   loader:PIXI.loaders.Loader;
   isStarted:boolean;
   allLoaded:boolean;
@@ -26,10 +27,15 @@ export default class LoaderScene extends PIXI.scene.Scene{
     this.progress = 5;
     this._onLoadCallback = function(){};
 
+    this.on('init', this._init);
+  }
+
+  private _init(){
+    this.createWorld(config.game.port.width, config.game.port.height);
     //loadBar
     this.loadBar = new PIXI.Graphics();
     this.drawBar(0.2);
-    this.addChild(this.loadBar);
+    this.world.addChild(this.loadBar);
   }
 
   update(delta){

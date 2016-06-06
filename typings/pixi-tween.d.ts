@@ -1,6 +1,8 @@
 declare module PIXI {
   export let tweenManager:tween.TweenManager;
 
+  //todo fix this def
+
   export module tween{
     export class TweenManager{
       constructor();
@@ -12,7 +14,7 @@ declare module PIXI {
       getTweensForTarget(target:any):Tween[];
     }
 
-    export class Tween{
+    export class Tween extends PIXI.utils.EventEmitter{
       constructor(target:any, manager?:TweenManager);
       target:any;
       manager:TweenManager;
@@ -54,38 +56,38 @@ declare module PIXI {
       clear():TweenPath;
     }
 
-    export interface Easing{
-      linear:(num:number)=>number;
-      inQuad:(num:number)=>number;
-      outQuad:(num:number)=>number;
-      inOutQuad:(num:number)=>number;
-      inCubic:(num:number)=>number;
-      outCubic:(num:number)=>number;
-      inOutCubic:(num:number)=>number;
-      inQuart:(num:number)=>number;
-      outQuart:(num:number)=>number;
-      inOutQuart:(num:number)=>number;
-      inQuint:(num:number)=>number;
-      outQuint:(num:number)=>number;
-      inOutQuint:(num:number)=>number;
-      inSine:(num:number)=>number;
-      outSine:(num:number)=>number;
-      inOutSine:(num:number)=>number;
-      inExpo:(num:number)=>number;
-      outExpo:(num:number)=>number;
-      inOutExpo:(num:number)=>number;
-      inCirc:(num:number)=>number;
-      outCirc:(num:number)=>number;
-      inOutCirc:(num:number)=>number;
-      inElastic:(num:number)=>number;
-      outElastic:(num:number)=>number;
-      inOutElastic:(num:number)=>number;
-      inBack:(num:number)=>number;
-      outBack:(num:number)=>number;
-      inOutBack:(num:number)=>number;
-      inBounce:(num:number)=>number;
-      outBounc:(num:number)=>number;
-      inOutBounce:(num:number)=>number;
+    export class Easing{
+      static linear():(num:number)=>number;
+      static inQuad():(num:number)=>number;
+      static outQuad():(num:number)=>number;
+      static inOutQuad():(num:number)=>number;
+      static inCubic():(num:number)=>number;
+      static outCubic():(num:number)=>number;
+      static inOutCubic():(num:number)=>number;
+      static inQuart():(num:number)=>number;
+      static outQuart():(num:number)=>number;
+      static inOutQuart():(num:number)=>number;
+      static inQuint():(num:number)=>number;
+      static outQuint():(num:number)=>number;
+      static inOutQuint():(num:number)=>number;
+      static inSine():(num:number)=>number;
+      static outSine():(num:number)=>number;
+      static inOutSine():(num:number)=>number;
+      static inExpo():(num:number)=>number;
+      static outExpo():(num:number)=>number;
+      static inOutExpo():(num:number)=>number;
+      static inCirc():(num:number)=>number;
+      static outCirc():(num:number)=>number;
+      static inOutCirc():(num:number)=>number;
+      static inElastic():(num:number)=>number;
+      static outElastic():(num:number)=>number;
+      static inOutElastic():(num:number)=>number;
+      static inBack():(num:number)=>number;
+      static outBack():(num:number)=>number;
+      static inOutBack():(num:number)=>number;
+      static inBounce():(num:number)=>number;
+      static outBounce():(num:number)=>number;
+      static inOutBounce():(num:number)=>number;
     }
   }
 }

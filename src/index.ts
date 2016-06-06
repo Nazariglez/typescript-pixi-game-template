@@ -6,5 +6,5 @@ import config from './config';
 let _plugins = plugins;
 
 //Init the game
-let game = new Game(config);
+let game = new Game(config.pixi);
 game.initialize();

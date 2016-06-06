@@ -1118,6 +1118,23 @@ declare namespace PIXI {
 
     }
 
+    export namespace utils {
+        //https://github.com/primus/eventemitter3
+        export class EventEmitter {
+
+            listeners(event: string): Function[];
+            emit(event: string, ...args: any[]): boolean;
+            on(event: string, fn: Function, context?: any): EventEmitter;
+            once(event: string, fn: Function, context?: any): EventEmitter;
+            removeListener(event: string, fn: Function, context?: any, once?: boolean): EventEmitter;
+            removeAllListeners(event: string): EventEmitter;
+
+            off(event: string, fn: Function, context?: any, once?: boolean): EventEmitter;
+            addListener(event: string, fn: Function, context?: any): EventEmitter;
+
+        }
+    }
+
     //////////////////////////////////////////////////////////////////////////////
     ////////////////////////////EXTRAS////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////

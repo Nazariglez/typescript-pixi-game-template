@@ -14,6 +14,7 @@ declare module PIXI {
     raf:number;
     isRunning:boolean;
     stopOnVisibilityChange:boolean;
+    protected _animate():void;
   }
 }
 

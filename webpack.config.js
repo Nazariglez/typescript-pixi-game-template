@@ -9,7 +9,8 @@ if(production){
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
       compress: {
-        warnings: false
+        warnings: false,
+        pure_funcs: ['console.log']
       },
       output: {comments:false}
     })

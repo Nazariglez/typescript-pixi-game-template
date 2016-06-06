@@ -36,7 +36,7 @@ export default class Game {
   }
 
   _updateManagers():void{
-    PIXI.keyboard.update(); //keyboard don't need the delta time
+    PIXI.keyboardManager.update(); //keyboard don't need the delta time
     PIXI.tweenManager.update(this.animationLoop.delta);
     PIXI.timerManager.update(this.animationLoop.delta);
   }

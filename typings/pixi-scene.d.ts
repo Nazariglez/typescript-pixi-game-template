@@ -20,6 +20,7 @@ declare module PIXI {
 
     export class SceneManager extends Container{
       constructor(renderer:WebGLRenderer|CanvasRenderer);
+      renderer:WebGLRenderer|CanvasRenderer;
       scenes:Scene[];
       scene:Scene;
       fixedHeight:number;

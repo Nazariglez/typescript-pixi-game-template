@@ -6,8 +6,8 @@
 ///<reference path="../typings/pixi-keyboard.d.ts" />
 ///<reference path="../typings/pixi-audio.d.ts" />
 /*
-  import all the plugins to extend pixi here.
-*/
+ import all the plugins to extend pixi here.
+ */
 import AnimationLoopPlugin from 'pixi-animationloop';
 import KeyboardPlugin from 'pixi-keyboard';
 import TimerPlugin from 'pixi-timer';

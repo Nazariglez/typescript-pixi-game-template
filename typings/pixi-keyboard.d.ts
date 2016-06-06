@@ -126,7 +126,7 @@ declare module PIXI {
     SINGLE_QUOTE:number;
   }
 
-  export let keyboard:KeyboardManager;
+  export let keyboardManager:KeyboardManager;
 }
 
 declare module 'pixi-keyboard' {
