@@ -16,7 +16,7 @@ declare module PIXI {
       resume():void;
     }
 
-    export class Audio extends EventEmitter{
+    export class Audio extends utils.EventEmitter{
       constructor(data:HTMLAudioElement|AudioBuffer, manager:AudioManager);
       manager:AudioManager;
       data:AudioBuffer|HTMLAudioElement;
